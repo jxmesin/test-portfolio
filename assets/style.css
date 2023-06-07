@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Creepster&family=DM+Serif+Display&family=Jost&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --lightgrey: #B2BABD;
+}
+
+
+.navbar-nav {
+    font-family: 'Roboto' , sans-serif;   
+}
+
+.navbar-nav li  a {
+    color: var(--lightgrey) !important;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .textstyle {
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        font-family: 'Roboto' , sans-serif;
+        font-size: 20vw;
+        font-weight: 700;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .textstyle {
+        width: 2vw;
+        position: absolute; 
+        top: 45%; 
+        left: 5%; 
+        font-family: 'Roboto' , sans-serif;
+        font-size: 12vw;
+        font-weight: 700;
+    }
+}
+
+.homepage {
+    position: relative; 
+    text-align: center; 
+    color: black;
+    height: 100vh;
+}
+
+.homepage h1 {
+    word-wrap: normal;
+    line-height: 12rem !important;
+}
+
+
+.gradient {
+	background: linear-gradient(-45deg, #3E9BFF,#6371F6,#C956FF,#FE6E6E,#FF7CD6, #333);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.rect {
+    display: flex;
+    height: 100vh;
+    left: 100px;
+    overflow: hidden;
+}
